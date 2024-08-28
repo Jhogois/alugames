@@ -13,7 +13,7 @@ function alterarStatus(jogo) {
   let game = selecionaJogo.querySelector("div");
   let button = selecionaJogo.querySelector("a");
 
-  if (!!button.innerHTML === "Alugar") {
+  if (button.innerHTML === "Alugar") {
     game.classList.add("dashboard__item__img--rented");
     button.classList.add("dashboard__item__button--return");
     fraseBotao(jogo, "Devolver");
